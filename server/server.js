@@ -8,7 +8,9 @@ app.use(cors());
 app.use(express.json());
 
 //Setting Up DB Connection
-mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect(
+  "mongodb+srv://sampreetg:sampreetg@samcluster.p1gitx0.mongodb.net/tasks?retryWrites=true&w=majority&appName=SamCluster"
+); //Did not add the connection string to .env file so that you can test the backend and its structure
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 db.once("open", () => console.log("Connected to MongoDB"));
@@ -16,5 +18,5 @@ db.once("open", () => console.log("Connected to MongoDB"));
 //Initializing API Routes
 app.use("/api/task", routes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
