@@ -1,6 +1,8 @@
 # Task-Management-Platform-MERN
 
 ## OVERVIEW
+![image](https://github.com/SampreetG22/task-management-platform-MERN/assets/128352957/05d30e3a-15ee-4a0f-ba3c-1822e65af8dd)
+
 
 1. This is a minimalistic and concise project task management web app built using MERN Stack.
 2. The web app allows the user to perform all high-level CRUD operations i.e., Creating, Editing, Deleting, and Retrieving the tasks.
