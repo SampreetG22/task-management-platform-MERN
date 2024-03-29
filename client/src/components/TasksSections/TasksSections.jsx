@@ -73,7 +73,7 @@ const TasksSections = ({ newTasks, handleDialogOps }) => {
                 </div>
               ))
             ) : (
-              <p className="noTaskText">No tasks {each.category}</p>
+              <p className="noTaskText">No tasks {each.category} yet</p>
             )}
           </div>
         );
